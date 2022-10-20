@@ -12,9 +12,9 @@ $smtp   = array();
 // Definir caminhos padrões
 $path["projectDIR"]     = __DIR__ ;
 $path["projectURL"]     = __DIR__ ;
-$path["uploadPublic"]   = __DIR__ ."/upFilesPublic/";
-$path["uploadPrivate"]  = __DIR__ ."/upFilesPrivate/";
-$path["autoload"]       = __DIR__ ."/autoload.php";
+$path["uploadPublic"]   = __DIR__ ."\\upFilesPublic\\";
+$path["uploadPrivate"]  = __DIR__ ."\\upFilesPrivate\\";
+$path["autoload"]       = __DIR__ ."\\autoload.php";
 $_SESSION['path']       = $path;
 
 // Definir configurações de Banco de Dados

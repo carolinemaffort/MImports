@@ -3,9 +3,9 @@
 
 $path = $_SERVER['SCRIPT_FILENAME'];
 for ($i = 0; $i < 2; $i++) {
-    $path = substr($path, 0, strripos($path,"/"));
+    $path = substr($path, 0, strripos($path,"\\"));
 }
-$path .= "/";
+$path .= "\\";
 
 if ( session_status() == PHP_SESSION_NONE ) { //  PHP >= 5.4.0
     session_start();
@@ -16,7 +16,7 @@ $connection-> query("desc Cadastro");
 print_r($connection);*/
 
 // Requer as configurações em relação ao diretório local
-require $path.'resources/configure.php';
+require $path.'resources\\configure.php';
 
 class DBConnection {
     
@@ -29,7 +29,7 @@ class DBConnection {
     
     function __construct() {
         
-        include "../resources/configure.php";
+        include "..\\resources\\configure.php";
         
         $this->setHost( $_SESSION["confDB"]['host'] );
         $this->setUser( $_SESSION["confDB"]['user'] );
