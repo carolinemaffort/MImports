@@ -3,6 +3,7 @@
 // Inicia ou resume uma sessão
 session_start();
 
+
 // Verifica qual é o local em que o código está sendo executado
 if ($_SERVER["HTTP_HOST"] == "localhost") {
     // Seta o host para conexão com BD
@@ -15,13 +16,13 @@ if ($_SERVER["HTTP_HOST"] == "localhost") {
     $_SESSION["CONNECTION"]["DATABASE"]["NAME"] = "mimports";
 } else {
     // Seta o host para conexão com BD
-    $_SESSION["CONNECTION"]["HOSTNAME"] = "";
+    $_SESSION["CONNECTION"]["HOSTNAME"] = "51.79.72.47";
     // Seta o usuário para conexão com BD
-    $_SESSION["CONNECTION"]["USERNAME"] = "";
+    $_SESSION["CONNECTION"]["USERNAME"] = "hostdeprojetos_mimports";
     // Seta a senha para conexão com BD
-    $_SESSION["CONNECTION"]["PASSWORD"] = "";
+    $_SESSION["CONNECTION"]["PASSWORD"] = "pUBN2?U2{;H?";
     // Seta o banco de dados para conexão
-    $_SESSION["CONNECTION"]["DATABASE"]["NAME"] = "";
+    $_SESSION["CONNECTION"]["DATABASE"]["NAME"] = "hostdeprojetos_mimports";
 }
 
 // Seta a tabela de feedback e seus campos
@@ -38,11 +39,11 @@ $_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["CADASTRO"]["FIELDS"] = array("id"
 $_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["LOGIN"]["NAME"] = "login";
 $_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["LOGIN"]["FIELDS"] = array("id", "email", "senha");
 
-$_SESSION["SMTP"]["HOSTNAME"] = 'smtp.gmail.com';
-$_SESSION["SMTP"]["AUTH"] = true;
-$_SESSION["SMTP"]["SECURE"] = 'tls';
-$_SESSION["SMTP"]["USERNAME"] = 'maffort.imports@gmail.com';
-$_SESSION["SMTP"]["PASSWORD"] = 'mrygzubpthgpgwex';
-$_SESSION["SMTP"]["PORT"] = 465;
+//$_SESSION["SMTP"]["HOSTNAME"] = 'smtp.gmail.com';
+//$_SESSION["SMTP"]["AUTH"] = true;
+//$_SESSION["SMTP"]["SECURE"] = 'tls';
+//$_SESSION["SMTP"]["USERNAME"] = 'maffort.imports@gmail.com';
+//$_SESSION["SMTP"]["PASSWORD"] = 'mrygzubpthgpgwex';
+//$_SESSION["SMTP"]["PORT"] = 465;
 
 ?>
