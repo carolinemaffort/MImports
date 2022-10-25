@@ -1,4 +1,5 @@
 <?php
+git commit -m "Adding some code"
 
 // Inicia ou resume uma sessão
 session_start();
