@@ -1,5 +1,5 @@
-git commit -m "Adding some code"
 <?php
+git commit -m "Adding some code"
 
 // use email\Email;
 
