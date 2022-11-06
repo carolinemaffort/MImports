@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/logo.png">
+    <title>Maffort Imports</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    
+
+  </head>
+<body>
+
+
+<div class="latest-products">
+    <div class="container">
+    
+<div class="row">
+
+ 
+
+        <div class="col-md-4">
+        <div class="section-heading">
+              <h2>Inserir produto</h2>
+        </div>
+
+        <form action="inserir.php" class="" novalidate>
+            <div class="product-item">
+            <input type="file" class="form-control" id="foto" placeholder="" name="foto" required>
+              <div class="down-content">
+                <h4><input type="text" style="width: 200px;" class="form-control" id="titulo" placeholder="Título" name="titulo" required></h4>
+                <h6><input type="text" size="2" class="form-control" id="preco" placeholder="Preço" name="preco" required></h6>
+                <p><input type="text"  class="form-control" id="desc" placeholder="Descrição" name="desc" required></p>
+    
+                <button type="submit" class="btn btn-danger filled-button">Enviar</button>
+                
+              </div>
+            </div>
+            </form>
+        </div>
+
+</div>
+    </div>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+</body>
+</html>
