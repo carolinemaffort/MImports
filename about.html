@@ -61,6 +61,12 @@ https://templatemo.com/tm-546-sixteen-clothing
               <li class="nav-item active">
                 <a class="nav-link" href="about.html">Sobre nós</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.php"> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg></span>
+              </a>
+              </li>
              
             </ul>
           </div>
@@ -263,82 +269,40 @@ https://templatemo.com/tm-546-sixteen-clothing
               <h2>Cadastre seu email para receber novidades </h2>
             </div>
           </div>
+          
           <div class="col-md-8">
             <div class="contact-form">
-              <form id="contact" action="cadastro.php" method="post">
+            
+              <form id="contact" name="contact">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input maxlength="90" name="name" type="text" class="form-control" id="name" placeholder="Nome Completo" required="">
+                      <input maxlength="90" name="name" type="text" class="form-control" id="name" placeholder="Nome Completo">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input maxlength="200" name="email" type="text" class="form-control" id="email" placeholder="Email" required="">
+                      <input maxlength="200" name="email" type="text" class="form-control" id="email" placeholder="Email">
                     </fieldset>
                   </div>
+                   <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <textarea maxlength="500" name="message" rows="6" class="form-control" id="message" placeholder="Envie o seu feedback!"></textarea>
+                    </fieldset>
+                  </div>
+               
                   <div class="col-lg-12">
                     <fieldset>
 
-                      <!-- Button to Open the Modal -->
-
-                      <button type="submit" id="form-submit" class="filled-button" data-toggle="modal" data-target="#myModal">Enviar</button>
-
-                      <div class="container">
-                      
-                        <!-- The Modal -->
-                        <div class="modal fade" id="myModal" style="top: 200px;">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                            
-                              <!-- Modal Header -->
-                              <div class="modal-header">
-                                <h4 class="modal-title">Email cadastrado com sucesso!</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                              
-                              <!-- Modal body -->
-                              <div class="modal-body">
-                                <div class="happy-clients">
-                                  <div class="container">
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <div class="section-heading">
-                                          <h6>Relate a sua experiência conosco! Seu feedback é muito importante para nós.</h6>
-                                        </div>
-                                      
-                                      <div class="col-md-12">
-                                        <form class="contact-form" action="feedback.php" method="post" name="feedback"> <!-- owl-clients owl-carousel -->
-                                          <div class="col-lg-12">
-                                            <fieldset>
-                                              <textarea maxlength="500" name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                                            </fieldset>
-                                          </div>
-                                        </br>
-                                        <div class="modal-footer">
-                                          <button type="submit" id="form-submit" class="btn btn-danger filled-button" data-dismiss="modal">Enviar</button>
-                                        </div>
-                                      </form>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                            
-                              
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
+                      <button type="button" id="formSubmit" class="filled-button">Enviar</button>                   
 
                     </fieldset>
                   </div>
                 </div>
-              </form>
+              </form>            
             </div>
           </div>
+          
           <div class="col-md-4">
             <ul class="accordion">
               <li>
@@ -381,9 +345,9 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+              <p>Copyright &copy; 2022
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            - Design: <a rel="nofollow noopener" href="http://projetos.talentosdoifsp.gru.br/mabe" target="_blank">MABE</a></p>
             </div>
           </div>
         </div>
@@ -403,19 +367,69 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+	<script>
+/*
+		cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+		function clearField(t){                   //declaring the array outside of the
+			if(! cleared[t.id]){                      // function makes it static and global
+			    cleared[t.id] = 1;  // you could use true and false, but that's more typing
+			    t.value='';         // with more chance of typos
+		    t.style.color='#fff';
+		    }
+		}
+*/	
+		$(document).ready(function(){
+			$("#formSubmit").click(function(){
+				var formData = $("#contact").serialize();
 
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
+				$.post( "cadastro.php", formData )
+				.done( function( data ) {
+				    $("#myModal").modal();
+				})
+				.fail(function(jqXHR, textStatus, msg){alert(msg);
+				     alert("Não foi possivel nem enviar o cadastrar!");
+				});
+				
+			});		
+			
+			
+		});
+	
+	</script>
+            
+  <div class="modal fade" id="myModal" style="margin-top:100px;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+             
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="filled-button" data-dismiss="modal" id="goEmail">Fechar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
+  <script>
+ /* $(document).ready(function(){
+    $("#goEmail").click(function(){
+      window.location.href = "http://localhost/mimports/email.php"
+      
+      
+    });		
+    
+    
+  }); */
+  </script>
+  
+		</div>
 
-  </body>
+</body>
 
 </html>
