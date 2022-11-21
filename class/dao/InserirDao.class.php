@@ -2,7 +2,7 @@
 
 // Requer o arquivo de configuração com informações globais
 require_once(__DIR__ . "/../../etc/conf.php");
-require_once(__DIR__ . "\Dao.class.php");
+require_once(__DIR__ . "/Dao.class.php");
 
 // Classe para executar as queries na conexão com BD
 class InserirDao extends Dao {

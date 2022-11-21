@@ -4,11 +4,13 @@
         private $id = ""; 
         private $email = "";
         private $nome = "";
+        private $message = "";
 
-        function __construct($id, $email, $nome){
+        function __construct($id, $email, $nome, $message){
             $this->setId($id);
             $this->setEmail($email);
             $this->setNome($nome);
+            $this->setMessage($message);
         }
 
         public function setId($id){
@@ -31,6 +33,13 @@
     
         public function getNome(){
             return $this->nome;
+        }
+        public function setMessage($message) {
+            $this->message = $message;
+        }
+        
+        public function getMessage() {
+            return $this->message;
         }
     }
 

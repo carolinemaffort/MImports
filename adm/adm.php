@@ -35,6 +35,7 @@ $connection = new DatabaseConnection();
 
 // Transporta os valores do formulário para o model de login
 $model = new LoginModel(0, $email, $senha);
+print_r($model);
 
 if(isset($email, $senha)){
     
@@ -69,7 +70,7 @@ $result = $connection->query($dao->createQuery());
 
 //print_r($dao->createQuery());
 // Printa o resultado
-echo "Query de inserção: " . $result . "<br>";
+//echo "Query de inserção: " . $result . "<br>";
 ?>
 
 <!--interface da notificação de erro-->

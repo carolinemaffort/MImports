@@ -27,14 +27,10 @@ if ($_SERVER["HTTP_HOST"] == "localhost") {
     $_SESSION["CONNECTION"]["DATABASE"]["NAME"] = "hostdeprojetos_mimports";
 }
 
-// Seta a tabela de feedback e seus campos
-$_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["FEEDBACKS"]["NAME"] = "feedbacks";
-$_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["FEEDBACKS"]["FIELDS"] = array("id", "mensagem");
-
  
 //Seta a tabela de cadastro e seus campos 
 $_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["CADASTRO"]["NAME"] = "cadastro";
-$_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["CADASTRO"]["FIELDS"] = array("id", "email", "nome");
+$_SESSION["CONNECTION"]["DATABASE"]["TABLES"]["CADASTRO"]["FIELDS"] = array("id", "email", "nome", "mensagem");
 
 //Checar se isso aqui tá certo mesmo 
 //Seta a tabela de cadastro e seus campos 

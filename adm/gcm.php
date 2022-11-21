@@ -63,7 +63,13 @@ include ('../class/connection/DatabaseConnection.class.php');
               // print_r($result);
 
               foreach ($result as $rere) {
-                echo "<br> id: ". $rere["id"]. " - Foto: ". $rere["foto"]. " - Titulo: ". $rere["titulo"]. " - Descrição: ". $rere["descricao"]. " - Preço: ". $rere["preco"] . "<br>";
+                echo "<form name='formulario' action='../crud/alterar.php' method='post' style='display: inline-block'><br> - ID: " . $rere["id"] . " 
+                <br>- Foto: <input type='text' name='foto' value='" . $rere["foto"] . "'>  
+                <br>- Titulo: <input type='text' name='titulo' value='" . $rere["titulo"] . "'> 
+                <br>- Descrição: <input type='text' name='desc' value='" . $rere["descricao"] . "'> 
+                <br> - Preço: <input type='text' name='preco' value='" . $rere["preco"] . "'><input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>" ."<br>" .
+                "<button type='submit' class='btn btn-danger filled-button' onclick='altform()'>Alterar</button>" .  "&nbsp" . 
+                "<form action='../crud/excluir.php' method='post' style='display: inline-block'>  <button type='submit' class='btn btn-danger filled-button' >Deletar</button> <input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>";
              }
              
              $connection->close();
@@ -72,32 +78,19 @@ include ('../class/connection/DatabaseConnection.class.php');
         } catch(Exception $e) {
                 echo $e;
         }
-              
-        
-        //$consulta = "SELECT * FROM usuario"; $con = $mysqli->query($consulta) or die($mysqli->error);
 
         ?>
-
-        <!-- AQUI JÁ VAI TER A LISTAGEM DE PRODUTOS-->
-<!-- 
-    BOTÕES DELETAR E ALTERAR
-        <form action="crud/alterar.php" class="needs-validation" novalidate>
-                <button type="submit" class="btn btn-danger filled-button">Alterar</button>
-        </form><br>
-        <form action="crud/excluir.php" class="needs-validation" novalidate>
-                <button type="submit" class="btn btn-danger filled-button">Deletar</button>
-        </form><br> 
-    
--->
-        
           </div>
-
-          
-
 </div>
     </div>
 </div>
+        <script>
+          
+          function altform(){
+                document.getElementsByName("formulario")[0].submit();
+          }
 
+        </script>
 
 </body>
 </html>
