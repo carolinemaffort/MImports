@@ -57,7 +57,11 @@ $mailTo      = $email; // Destinário do Email
 $mailFrom    = 'maffort.imports@gmail.com'; // Remetente do Email
 $mailReplyTo = 'naoresponda@gmail.com';  // Em caso de Resposta enviar pra quem?
 $mailSubject = 'Email Cadastrado';       // Título do Email
-$mailMessage = 'Seu email foi cadastrado com sucesso! Muito obrigada e aguarde as próximas novidades.' . "</br>" . 'Att. Equipe Maffort Imports' ; // Corpo do Email
+$mailMessage = 'Seu email foi cadastrado com sucesso! Muito obrigada e aguarde as próximas novidades.
+ 
+
+Att. 
+Equipe Maffort Imports' ; // Corpo do Email
 
 enviarEmail($mailTo, $mailFrom, $mailReplyTo, $mailSubject, $mailMessage);
 
