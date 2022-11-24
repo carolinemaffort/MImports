@@ -89,7 +89,7 @@ echo "Query de inserção: " . $result . "<br>";
 
   <script>
 function voltar(){
-  window.location.replace("https://localhost/mimports/adm/gcm.php"); 
+  window.location.replace("https://hostdeprojetosdoifsp.gru.br/mimports/adm/gcm.php"); 
    //window.location.replace("https://<?php //echo '.  $_SERVER["SERVER_NAME"] . ' ?>/mimports/adm/gcm.php"); 
 }
 
