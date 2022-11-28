@@ -38,18 +38,16 @@
 
         <form action="inserir.php" class="" novalidate enctype="multipart/form-data">
             <div class="product-item">
-            <input type="file" class="form-control" id="foto" placeholder="" name="foto" required>
-              <div class="down-content">
-                <h4><input type="text" style="width: 200px;" class="form-control" id="titulo" placeholder="Título" name="titulo" required></h4>
-                <h6><input type="text" size="2" class="form-control" id="preco" placeholder="Preço" name="preco" required></h6>
-                <p><input type="text"  class="form-control" id="desc" placeholder="Descrição" name="desc" required></p>
-    
-                <button type="submit" class="btn btn-danger filled-button">Enviar</button>
-                
-              </div>
-            </div>
-            </form>
-        </div>
+            	<input type="file" class="form-control" id="foto" placeholder="" name="foto" required>
+              	<div class="down-content">
+                	<h4><input type="text" style="width: 200px;" class="form-control" id="titulo" placeholder="Título" name="titulo" required></h4>
+                	<h6><input type="text" size="2" class="form-control" id="preco" placeholder="Preço" name="preco" required></h6>
+                	<p><input type="text"  class="form-control" id="desc" placeholder="Descrição" name="desc" required></p>
+                	<input type="submit" class="btn btn-danger filled-button" value="Enviar">              
+            	</div>
+           	</div>
+        </form>
+</div>
 
 </div>
     </div>
@@ -57,7 +55,7 @@
 
 <script>
 // Disable form submissions if there are invalid fields
-(function() {
+/*(function() {
   'use strict';
   window.addEventListener('load', function() {
     // Get the forms we want to add validation styles to
@@ -73,7 +71,7 @@
       }, false);
     });
   }, false);
-})();
+})();*/
 </script>
 
 </body>
