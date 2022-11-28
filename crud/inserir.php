@@ -23,7 +23,10 @@ include ('../class/dao/InserirDao.class.php');
 include ('../class/connection/DatabaseConnection.class.php');
 
 // Recebe os dados do formulário
-$foto = $_REQUEST["foto"];
+$tmpName = $_FILES['foto']['tmp_name'];
+$time = (new DateTime())->format('YmdHisu');
+$pathFile = './assets/images/' . $time . $_FILES['foto']['name'];
+move_uploaded_file($tmpName, $pathFile);
 $titulo = $_REQUEST["titulo"];
 $preco = $_REQUEST["preco"];
 $descricao = $_REQUEST["desc"];
@@ -31,7 +34,7 @@ $descricao = $_REQUEST["desc"];
 
 
 // Transporta os valores do formulário para o model de cadastro
-$model = new InserirModel(0, $foto,  $titulo, $preco, $descricao);
+$model = new InserirModel(0, $time . $_FILES['foto']['name'],  $titulo, $preco, $descricao);
 
 //print_r($model);
 
