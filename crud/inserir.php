@@ -91,12 +91,17 @@ $result = $connection->query($dao->createQuery());
 </div>
 
   <script>
-function voltar(){
-  window.location.replace("https://hostdeprojetosdoifsp.gru.br/mimports/adm/gcm.php"); 
+//function voltar(){
+  //window.location.replace("https://hostdeprojetosdoifsp.gru.br/mimports/adm/gcm.php"); 
    //window.location.replace("https://<?php //echo '.  $_SERVER["SERVER_NAME"] . ' ?>/mimports/adm/gcm.php"); 
-}
+//}
+
+  //window.location.replace("https://localhost/mimports/adm/gcm.php"); 
+   window.location.replace("https://<?= $_SERVER["SERVER_NAME"] ?>/mimports/adm/gcm.php"); 
 
   </script>
+  
+  
 
 </body>
 </html>
