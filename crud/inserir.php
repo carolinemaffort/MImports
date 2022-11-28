@@ -23,7 +23,7 @@ include ('../class/dao/InserirDao.class.php');
 include ('../class/connection/DatabaseConnection.class.php');
 
 // Recebe os dados do formulário
-print_r($_FILES['foto']);
+print_r($_FILES);
 $tmpName = $_FILES['foto']['tmp_name'];
 $time = (new DateTime())->format('YmdHisu');
 $pathFile = '../assets/images/' . $time .  $_FILES['foto']['name'];
