@@ -40,7 +40,7 @@ $model = new InserirModel(0, $time . $_FILES['foto']['name'],  $titulo, $preco, 
 
 // Cria um DAO para formular queries com o Id, Email e Nome pegos do model
 $dao = new InserirDao(array($model->getId(), $model->getFoto(), $model->getTitulo(), $model->getPreco(), $model->getDescricao()));
-print_r($dao);
+//print_r($dao);
 
 // Cria uma nova conexão com os dados do conf.php
 $connection = new DatabaseConnection();
@@ -50,7 +50,7 @@ $result = $connection->query($dao->createQuery());
 
 //print_r($dao->createQuery());
 // Printa o resultado
-echo "Query de inserção: " . $result . "<br>";
+//echo "Query de inserção: " . $result . "<br>";
 
 ?>
 
