@@ -64,7 +64,7 @@ include ('../class/connection/DatabaseConnection.class.php');
 
               foreach ($result as $rere) {
                 echo "<form name='formulario" . $rere["id"] . "' action='../crud/alterar.php' method='post' enctype='multipart/form-data' style='display: inline-block'><br> - ID: " . $rere["id"] . " 
-                <br>- Foto: <input type='text' name='foto' value='" . $rere["foto"] . "'>  
+                <br>- Foto: <input type='file' name='foto' value='" . $rere["foto"] . "'>  
                 <br>- Titulo: <input type='text' name='titulo' value='" . $rere["titulo"] . "'> 
                 <br>- Descrição: <input type='text' name='desc' value='" . $rere["descricao"] . "'> 
                 <br> - Preço: <input type='text' name='preco' value='" . $rere["preco"] . "'><input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>" ."<br>" .
