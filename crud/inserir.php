@@ -24,17 +24,16 @@ include ('../class/connection/DatabaseConnection.class.php');
 
 // Recebe os dados do formulário
 $tmpName = $_FILES['foto']['tmp_name'];
-$time = (new DateTime())->format('YmdHisu');
-$pathFile = '../assets/images/' . $time . $_FILES['foto']['name'];
+//$time = (new \DateTime())->format('YmdHisu');
+$pathFile = '../assets/images/' . $_FILES['foto']['name'];
 move_uploaded_file($tmpName, $pathFile);
 $titulo = $_REQUEST["titulo"];
 $preco = $_REQUEST["preco"];
 $descricao = $_REQUEST["desc"];
 
 
-
 // Transporta os valores do formulário para o model de cadastro
-$model = new InserirModel(0, $time . $_FILES['foto']['name'],  $titulo, $preco, $descricao);
+$model = new InserirModel(0, $_FILES['foto']['name'],  $titulo, $preco, $descricao);
 
 //print_r($model);
 
