@@ -19,8 +19,6 @@ if ($connection->query($sql) === TRUE) {
 $connection->close();
 ?> 
 
-<button type="submit" class="btn btn-danger filled-button" onclick="voltar()" >Voltar</button>
-
 <script>
   //window.location.replace("https://localhost/mimports/adm/gcm.php"); 
    window.location.replace("https://<?= $_SERVER["SERVER_NAME"] ?>/mimports/adm/gcm.php"); 
