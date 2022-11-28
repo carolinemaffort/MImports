@@ -25,7 +25,7 @@ include ('../class/connection/DatabaseConnection.class.php');
 // Recebe os dados do formulário
 $tmpName = $_FILES['foto']['tmp_name'];
 $time = (new DateTime())->format('YmdHisu');
-$pathFile = './assets/images/' . $time . $_FILES['foto']['name'];
+$pathFile = '../assets/images/' . $time . $_FILES['foto']['name'];
 move_uploaded_file($tmpName, $pathFile);
 $titulo = $_REQUEST["titulo"];
 $preco = $_REQUEST["preco"];
