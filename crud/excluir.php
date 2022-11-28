@@ -11,7 +11,7 @@ $id = $_REQUEST['id'];
 $sql = "DELETE FROM produtos WHERE id=$id";
 
 if ($connection->query($sql) === TRUE) {
-  echo "Deletado!";
+  echo "Deletando...";
 } else {
   echo "Deu ruim! " . $connection->error;
 }
