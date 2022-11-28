@@ -63,12 +63,12 @@ include ('../class/connection/DatabaseConnection.class.php');
               // print_r($result);
 
               foreach ($result as $rere) {
-                echo "<form name='formulario' action='../crud/alterar.php' method='post' style='display: inline-block'><br> - ID: " . $rere["id"] . " 
+                echo "<form name='formulario" . $rere["id"] . "' action='../crud/alterar.php' method='post' style='display: inline-block'><br> - ID: " . $rere["id"] . " 
                 <br>- Foto: <input type='text' name='foto' value='" . $rere["foto"] . "'>  
                 <br>- Titulo: <input type='text' name='titulo' value='" . $rere["titulo"] . "'> 
                 <br>- Descrição: <input type='text' name='desc' value='" . $rere["descricao"] . "'> 
                 <br> - Preço: <input type='text' name='preco' value='" . $rere["preco"] . "'><input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>" ."<br>" .
-                "<button type='submit' class='btn btn-danger filled-button' onclick='altform()'>Alterar</button>" .  "&nbsp" . 
+                "<button type='submit' class='btn btn-danger filled-button' onclick='altform(" . $rere["id"] . ")'>Alterar</button>" .  "&nbsp" . 
                 "<form action='../crud/excluir.php' method='post' style='display: inline-block'>  <button type='submit' class='btn btn-danger filled-button' >Deletar</button> <input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>";
              }
              
@@ -86,11 +86,10 @@ include ('../class/connection/DatabaseConnection.class.php');
 </div>
         <script>
           
-          function altform(){
-                document.getElementsByName("formulario")[0].submit();
+          function altform(id){
+                document.getElementsByName("formulario" + id)[0].submit();
           }
 
         </script>
-
 </body>
 </html>
