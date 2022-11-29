@@ -136,7 +136,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <a href='#'><img src='https://hostdeprojetosdoifsp.gru.br/mimports/assets/images/" . $re["foto"] . "' alt=''></a>
                         <div class='down-content'>
                            <a href='#'><h4> " . $re["titulo"] . " </h4></a>
-                          <h6> "R$" . " . $re["preco"] . " </h6>
+                          <h6> "'R$'" . " . $re["preco"] . " </h6>
                           <p> " . $re["descricao"] . " </p>
                           <ul class='stars'>
 
