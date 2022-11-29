@@ -53,7 +53,7 @@ include ('../class/connection/DatabaseConnection.class.php');
         <form action="../crud/inserir.html" class="needs-validation" novalidate>
                 <button type="submit" class="btn btn-danger filled-button">Inserir</button>
         </form><br>
-        <br><button type="submit" class="btn btn-danger filled-button"><a href="logout.php">Logout</a> </button><br>
+        <button type="submit" class="btn btn-danger filled-button"><a href="logout.php">Logout</a> </button><br>
         <?php
         try {
               $connection = new DatabaseConnection();
