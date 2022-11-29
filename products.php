@@ -133,9 +133,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                     foreach ($resultado as $re){
                         echo "<div class='col-lg-4 col-md-4 all gra'>
                       <div class='product-item'>
-                        <a href='#'><img src='https://hostdeprojetosdoifsp.gru.br/mimports/assets/images/" . $re["foto"] . "' alt=''></a>
+                        <img src='https://hostdeprojetosdoifsp.gru.br/mimports/assets/images/" . $re["foto"] . "' alt=''>
                         <div class='down-content'>
-                           <a href='#'><h4> " . $re["titulo"] . " </h4></a>
+                          <h4> " . $re["titulo"] . " </h4>
                           <h6> R$" . $re["preco"] . " </h6>
                           <p> " . $re["descricao"] . " </p>
                           <ul class='stars'>
