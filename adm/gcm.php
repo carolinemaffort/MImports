@@ -63,13 +63,13 @@ include ('../class/connection/DatabaseConnection.class.php');
               // print_r($result);
 
               foreach ($result as $rere) {
-                echo "<form name='formulario" . $rere["id"] . "' action='../crud/alterar.php' method='post' enctype='multipart/form-data' style='display: inline-block'><br> - ID: " . $rere["id"] . " 
-                <br>- Foto: <img src='https://hostdeprojetosdoifsp.gru.br/mimports/assets/images/" . $rere["foto"] . "' alt='' width='300'><br><br><input type='file' name='foto' value='" . $rere["foto"] . "'><br>
+                echo "<form name='formulario" . $rere["id"] . "' action='../crud/alterar.php' method='post' enctype='multipart/form-data' style='display: inline-block'><br> - ID: " . $rere["id"] . " <br>
+                <br>- Foto: <br> <img src='https://hostdeprojetosdoifsp.gru.br/mimports/assets/images/" . $rere["foto"] . "' alt='' width='300'><br><br><input type='file' name='foto' value='" . $rere["foto"] . "'><br>
                 <br>- Titulo: <input type='text' name='titulo' value='" . $rere["titulo"] . "'> 
                 <br>- Descrição: <input type='text' name='desc' value='" . $rere["descricao"] . "'> 
                 <br> - Preço: <input type='text' name='preco' value='" . $rere["preco"] . "'><input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>" ."<br>" .
                 "<button type='submit' class='btn btn-danger filled-button' onclick='altform(" . $rere["id"] . ")'>Alterar</button>" .  "&nbsp" . 
-                "<form action='../crud/excluir.php' method='post' style='display: inline-block'>  <button type='submit' class='btn btn-danger filled-button' >Deletar</button> <input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br>";
+                "<form action='../crud/excluir.php' method='post' style='display: inline-block'>  <button type='submit' class='btn btn-danger filled-button' >Deletar</button> <input type='hidden' name='id' value='" . $rere['id'] . "'></form>" . "<br><br>";
              }
              
              $connection->close();
