@@ -62,7 +62,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </a>
               </li> 
               <li class="nav-item active">
-                <a class="nav-link" href="products.html">Produtos</a>
+                <a class="nav-link" href="products.php">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Sobre nós</a>
