@@ -183,7 +183,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     $connection = new DatabaseConnection();
                     $sql = "SELECT nome, mensagem FROM cadastro";
                     $resultado = $connection->query($sql); 
-    $print_r($resultado);
+    print_r($resultado);
     
     ?>
 
