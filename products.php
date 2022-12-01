@@ -50,14 +50,14 @@ https://templatemo.com/tm-546-sixteen-clothing
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Maffort <em>Imports</em></h2></a>
+          <a class="navbar-brand" href="index.php"><h2>Maffort <em>Imports</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Início
+                <a class="nav-link" href="index.php">Início
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
@@ -65,7 +65,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="nav-link" href="products.php">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre nós</a>
+                <a class="nav-link" href="about.php">Sobre nós</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="favoritos.php"> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -177,17 +177,6 @@ https://templatemo.com/tm-546-sixteen-clothing
     
     </div>
 
-    
-    <?php
-
-    $connection = new DatabaseConnection();
-                    $sql = "SELECT nome, mensagem FROM cadastro";
-                    $resultado = $connection->query($sql); 
-    print_r($resultado);
-    
-    ?>
-
-    
     <footer>
       <div class="container">
         <div class="row">
