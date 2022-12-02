@@ -12,7 +12,7 @@ $index = array_search($_REQUEST["id"], $favoritos);
 if (is_int($index)) {
   unset($favoritos[$index]);
   if (setcookie("favoritos", json_encode($favoritos), time() + 60 * 60 * 24 * 3)) {
-    echo "Favoritando...";
+    echo "Desfavoritando...";
   } else {
     echo "Deu ruim! ";
   }
