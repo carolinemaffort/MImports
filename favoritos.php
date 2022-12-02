@@ -1,34 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo.png">
-    <title>Maffort Imports</title>
+require_once(__DIR__ . "/etc/autoload.php");
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--
+$favoritos = json_decode($_COOKIE["favoritos"]);
 
-TemplateMo 546 Sixteen Clothing
+if (!is_array($favoritos)) {
+  $favoritos = array();
+}
 
-https://templatemo.com/tm-546-sixteen-clothing
+if (array_search($_REQUEST["id"], $favoritos) === false) {
+  array_push($favoritos, $_REQUEST["id"]);
+  if (setcookie("favoritos", json_encode($favoritos), time() + 60 * 60 * 24 * 3)) {
+    echo "Favoritando...";
+  } else {
+    echo "Deu ruim! ";
+  }
+}
+?> 
 
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
-
-  <body>
-    
-  </body>
-
-</html>
+<script>
+  //window.location.replace("https://localhost/mimports/adm/gcm.php"); 
+   window.location.replace("https://<?= $_SERVER["SERVER_NAME"] ?>/mimports/products.php"); 
+</script>
