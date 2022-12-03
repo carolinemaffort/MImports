@@ -55,7 +55,7 @@ include ('../class/connection/DatabaseConnection.class.php');
                 <button type="submit" class="btn btn-danger filled-button">Inserir</button>
         </form>
         <a class="btn btn-danger filled-button" href="#feedbacks" style="display:inline-block">Feedbacks</a>
-        <a class="btn btn-danger filled-button" href="#logout.php" style="display:inline-block">Logout</a><br>
+        <a class="btn btn-danger filled-button" href="logout.php" style="display:inline-block">Logout</a><br>
 
         
         <div class="row">
