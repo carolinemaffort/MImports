@@ -99,7 +99,7 @@
 
     <script>
       $('.owl-carousel').carousel({
-        interval: 1200
+        interval: 200
       })
     
     </script>
