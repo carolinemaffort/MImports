@@ -112,9 +112,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/relogio01.png" alt=""></a>
+              <img src="assets/images/relogio01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Smart Watch HW12</h4></a>
+                <h4>Smart Watch HW12</h4>
                 <h6>R$199,99</h6>
                 <p>Relógio Smartwatch Bluetooth HW12, Notificações e Ligações, iOS e Android</p>
                 <ul class="stars">
@@ -133,9 +133,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/fone01.png" alt=""></a>
+              <img src="assets/images/fone01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Fone Bluetooth</h4></a>
+               <h4>Fone Bluetooth</h4>
                 <h6>R$69,99</h6>
                 <p>Fone Bluetooth Wireless Compatível com Android e iOS, Variedade de cores </p> 
                 <ul class="stars">
@@ -155,9 +155,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/caixa01.png" alt=""></a>
+              <img src="assets/images/caixa01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Caixa de Som</h4></a>
+                <h4>Caixa de Som</h4>
                 <h6>R$149,99</h6>
                 <p>Caixa de Som Bluetooth MIFA Mini-F10, Resistente à água, Portátil, Entrada USB</p>
                 <ul class="stars">
@@ -177,9 +177,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/mouse01.png" alt=""></a>
+              <img src="assets/images/mouse01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Mouse</h4></a>
+                <h4>Mouse</h4>
                 <h6>R$29,99</h6>
                 <p>Mouse Inphic Escritório com Fio para Notebook e Computador</p>
                 <ul class="stars">
@@ -199,9 +199,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/cabo01.png" alt=""></a>
+              <img src="assets/images/cabo01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Cabo USB</h4></a>
+                <h4>Cabo USB</h4>
                 <h6>R$49,99</h6>
                 <p>Cabo USB Lightning Iphone Apple 2m </p>
                 <ul class="stars">
@@ -221,9 +221,9 @@
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/maquina01.png" alt=""></a>
+             <img src="assets/images/maquina01.png" alt="">
               <div class="down-content">
-                <a href="#"><h4>Maquininha </h4></a>
+                <h4>Maquininha </h4>
                 <h6>R$59,99</h6>
                 <p>Máquina de Cabelo Dragão Bivolt. Acompanha Pentes de Ajustes</p>
                 <ul class="stars">
