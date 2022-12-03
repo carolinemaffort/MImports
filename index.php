@@ -75,6 +75,7 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01"> <!--tamanho especial para tablet: 5516px-->
           <img src="assets/images/promo1.png" class="banner-item-01">
+           <span class="sr-only">Anterior</span>
           <div class="text-content">
            <!-- <h4>Promoções</h4>
             <h2>Queima de estoque</h2> -->
@@ -96,29 +97,6 @@
         </div>
       </div>
     </div>
-
-   <script>
-     $(document).ready(function() {
- 
-      $(".owl-carousel").owlCarousel({
- 
-      autoPlay: 3000,
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3],
-      center: true,
-      nav:true,
-      loop:true,
-      responsive: {
-        600: {
-          items: 3
-        }
-      
-      });
- 
-    });
-    
-   </script>
 
     <!-- Banner Ends Here -->
 
