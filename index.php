@@ -181,14 +181,16 @@
         </div>
       </div>
     </div>
+    
     <br><br>
+    
      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+       <div class="row">
+         <div class="col-md-12">
           <div class="section-heading">
               <h2>Feedbacks</h2>
-            </div>
           </div>
+         </div>
           
           
     <?php
@@ -214,11 +216,8 @@
   }
 
     ?>
-             </div>
-          </div>
-
-
-
+       </div>
+     </div>
 
 
     <div class="best-features">
