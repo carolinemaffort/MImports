@@ -115,7 +115,7 @@
               <img src="assets/images/relogio01.png" alt="">
               <div class="down-content">
                 <h4>Smart Watch HW12</h4>
-                <h6>R$199,99</h6>
+                <h6>R$199.99</h6>
                 <p>Relógio Smartwatch Bluetooth HW12, Notificações e Ligações, iOS e Android</p>
                
               </div>
@@ -126,7 +126,7 @@
               <img src="assets/images/fone01.png" alt="">
               <div class="down-content">
                <h4>Fone Bluetooth</h4>
-                <h6>R$69,99</h6>
+                <h6>R$69.99</h6>
                 <p>Fone Bluetooth Wireless Compatível com Android e iOS, Variedade de cores </p> 
                 
               </div>
@@ -137,7 +137,7 @@
               <img src="assets/images/caixa01.png" alt="">
               <div class="down-content">
                 <h4>Caixa de Som</h4>
-                <h6>R$149,99</h6>
+                <h6>R$149.99</h6>
                 <p>Caixa de Som Bluetooth MIFA Mini-F10, Resistente à água, Portátil, Entrada USB</p>
                
               </div>
@@ -148,7 +148,7 @@
               <img src="assets/images/mouse01.png" alt="">
               <div class="down-content">
                 <h4>Mouse</h4>
-                <h6>R$29,99</h6>
+                <h6>R$29.99</h6>
                 <p>Mouse Inphic Escritório com Fio para Notebook e Computador</p>
                 
               </div>
@@ -159,7 +159,7 @@
               <img src="assets/images/cabo01.png" alt="">
               <div class="down-content">
                 <h4>Cabo USB</h4>
-                <h6>R$49,99</h6>
+                <h6>R$49.99</h6>
                 <p>Cabo USB Lightning Iphone Apple 2m </p>
                
               </div>
@@ -170,7 +170,7 @@
              <img src="assets/images/maquina01.png" alt="">
               <div class="down-content">
                 <h4>Maquininha </h4>
-                <h6>R$59,99</h6>
+                <h6>R$59.99</h6>
                 <p>Máquina de Cabelo Dragão Bivolt. Acompanha Pentes de Ajustes</p>
                 
               </div>
