@@ -97,7 +97,10 @@
       </div>
     </div>
 
+    <script>
+      $('.owl-carousel').carousel(1200)
     
+    </script>
 
     <!-- Banner Ends Here -->
 
