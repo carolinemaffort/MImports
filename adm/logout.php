@@ -25,7 +25,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 session_destroy();
 //manda pra página index https://localhost/mimports/index.html
-header('Location: https://'.  $_SERVER["SERVER_NAME"] . '/mimports/index.html'); 
+header('Location: https://'.  $_SERVER["SERVER_NAME"] . '/mimports/index.php'); 
 
 
 ?>
