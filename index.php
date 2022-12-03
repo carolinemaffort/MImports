@@ -75,7 +75,6 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01"> <!--tamanho especial para tablet: 5516px-->
           <img src="assets/images/promo1.png" class="banner-item-01">
-           <span class="sr-only">Anterior</span>
           <div class="text-content">
            <!-- <h4>Promoções</h4>
             <h2>Queima de estoque</h2> -->
