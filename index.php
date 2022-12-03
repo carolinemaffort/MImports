@@ -71,7 +71,7 @@
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text" id="carouselExampleControls">
+    <div class="banner header-text">
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01"> <!--tamanho especial para tablet: 5516px-->
           <img src="assets/images/promo1.png" class="banner-item-01">
@@ -95,22 +95,30 @@
           </div>
         </div>
       </div>
-       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
     </div>
 
-    <script>
-      $('.owl-carousel').carousel({
-        interval: 200
-      })
+   <script>
+     $(document).ready(function() {
+ 
+      $(".owl-carousel").owlCarousel({
+ 
+      autoPlay: 3000,
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      center: true,
+      nav:true,
+      loop:true,
+      responsive: {
+        600: {
+          items: 3
+        }
+      
+      });
+ 
+    });
     
-    </script>
+   </script>
 
     <!-- Banner Ends Here -->
 
