@@ -94,8 +94,8 @@
             <h2>R$00,00</h2> -->
           </div>
         </div>
-        
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      </div>
+       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Anterior</span>
   </a>
@@ -103,7 +103,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Próximo</span>
   </a>
-      </div>
     </div>
 
     <script>
