@@ -98,7 +98,9 @@
     </div>
 
     <script>
-      $('.owl-carousel').carousel(1200)
+      $('.owl-carousel').carousel({
+        interval: 1200
+      })
     
     </script>
 
