@@ -71,7 +71,7 @@
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
+    <div class="banner header-text" id="carouselExampleControls">
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01"> <!--tamanho especial para tablet: 5516px-->
           <img src="assets/images/promo1.png" class="banner-item-01">
@@ -94,6 +94,15 @@
             <h2>R$00,00</h2> -->
           </div>
         </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
       </div>
     </div>
 
