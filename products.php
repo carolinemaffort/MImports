@@ -105,17 +105,7 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="filters">
-              <ul>
-                  <li class="active" data-filter="*">Todos os produtos</li>
-                  <li data-filter=".des">Relógios</li>
-                  <li data-filter=".dev">Fones</li>
-                  <li data-filter=".gra">Cabos</li>
-                  <li data-filter=".gru">Mouses</li>
-                  <li data-filter=".daw">Caixas</li>
-                  <li data-filter=".gre">Outros</li>
-              </ul>
-            </div>
+            
           </div>
           
           
